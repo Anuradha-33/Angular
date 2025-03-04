@@ -1,0 +1,6 @@
+<button (click)="toggleVisibility()">Toggle Visibility</button>
+<button (click)="toggleSpecial()">Toggle Special Class</button>
+
+<div *ngIf="isVisible">
+    <p [ngClass]="{'special-text': isSpecial}">This text changes style!</p>
+</div>
