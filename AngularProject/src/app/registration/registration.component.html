@@ -1,0 +1,21 @@
+<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label>Username:</label>
+        <input formControlName="username">
+        <small *ngIf="registrationForm.controls['username'].invalid && registrationForm.controls['username'].touched">Invalid Username</small>
+    </div>
+
+    <div>
+        <label>Email:</label>
+        <input formControlName="email">
+        <small *ngIf="registrationForm.controls['email'].invalid && registrationForm.controls['email'].touched">Invalid Email</small>
+    </div>
+
+    <div>
+        <label>Password:</label>
+        <input type="password" formControlName="password">
+        <small *ngIf="registrationForm.controls['password'].invalid && registrationForm.controls['password'].touched">Invalid Password</small>
+    </div>
+
+    <button type="submit" [disabled]="registrationForm.invalid">Submit</button>
+</form>
