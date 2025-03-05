@@ -1,0 +1,28 @@
+<div>
+    <h1>Angular Pipes Example</h1>
+
+
+    <h2>Using DatePipe</h2>
+    <p>Full Date: {{ currentDate | date: 'fullDate' }}</p>
+    <p>Short Date: {{ currentDate | date: 'shortDate' }}</p>
+
+
+    <h2>Using CurrencyPipe</h2>
+    <p>Price in USD: {{ price | currency:'USD':true:'1.2-2' }}</p>
+
+
+    <h2>Using UpperCasePipe and LowerCasePipe</h2>
+    <p>Original: {{ message }}</p>
+    <p>Uppercase: {{ message | uppercase }}</p>
+    <p>Lowercase: {{ message | lowercase }}</p>
+
+
+    <h2>Using Custom TitleCasePipe</h2>
+    <p>Original Text: {{ message }}</p>
+    <p>Title Case: {{ message | titleCase }}</p>
+
+
+    <h2>Chaining Pipes</h2>
+    <p>Chained Pipe Result: {{ message | lowercase | titleCase }}</p>
+    <p>Chained Currency Pipe: {{ price | currency:'USD':true:'1.0-2' | uppercase }}</p>
+</div>

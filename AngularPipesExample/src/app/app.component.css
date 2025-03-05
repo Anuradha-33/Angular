@@ -1,0 +1,18 @@
+h1,
+h2 {
+    color: navy;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+div {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+}

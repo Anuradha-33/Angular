@@ -1,0 +1,13 @@
+<div>
+    <h1>Lifecycle Example App</h1>
+
+    <button (click)="toggleComponent()">Toggle Lifecycle Component</button>
+
+    <div *ngIf="showLifecycleExample">
+        <app-lifecycle-example></app-lifecycle-example>
+    </div>
+
+    <div appLifecycleExample>
+        <p>This is a div with a custom directive applied.</p>
+    </div>
+</div>

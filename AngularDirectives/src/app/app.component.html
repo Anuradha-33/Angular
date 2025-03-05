@@ -1,0 +1,32 @@
+<div>
+    <h1>Built-in Directives</h1>
+
+    <!-- ngIf Example -->
+    <h2>ngIf Example</h2>
+    <button (click)="toggleContent()">Toggle Content</button>
+    <div *ngIf="showContent">
+        <p>This content is conditionally displayed using ngIf!</p>
+    </div>
+
+    <!-- ngFor Example -->
+    <h2>ngFor Example</h2>
+    <ul>
+        <li *ngFor="let item of items">{{ item }}</li>
+    </ul>
+
+    <!-- ngClass Example -->
+    <h2>ngClass Example</h2>
+    <button (click)="isActive = !isActive">Toggle Class</button>
+    <div [ngClass]="{ 'active': isActive, 'inactive': !isActive }">
+        This div's class changes dynamically.
+    </div>
+</div>
+
+<div>
+    <h1>Custom Directives</h1>
+
+    <h2>Hover Highlight Example</h2>
+    <p appHoverHighlight>Hover over this text to change its background color.</p>
+    <h2>Auto Focus Example</h2>
+    <input type="text" appAutoFocus placeholder="This input will be auto-focused">
+</div>
